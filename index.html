@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Xưởng May ABC</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -10,29 +10,45 @@
 
   <!-- Navbar -->
   <header class="bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg sticky top-0 z-50 text-white">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <!-- Logo / Tiêu đề -->
-    <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide">
-      ✂️ Xưởng May <span class="text-yellow-300">Kiều Vy</span>
-    </h1>
-
-    <!-- Navbar -->
-    <nav class="space-x-4 text-sm md:text-base">
-      <a href="#gioi-thieu" class="hover:text-yellow-300 transition duration-200">Giới thiệu</a>
-      <a href="#san-pham" class="hover:text-yellow-300 transition duration-200">Sản phẩm</a>
-      <a href="#lien-he" class="hover:text-yellow-300 transition duration-200">Liên hệ</a>
-    </nav>
-  </div>
-</header>
-
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="flex items-center space-x-3 text-2xl md:text-3xl font-extrabold tracking-wide">
+        <img src="img/iconmaymay.jpg" alt="Máy may" class="w-9 h-9 object-contain" />
+        <span>
+            Xưởng May <span class="text-yellow-300">Kiều Vy</span>
+        </span>
+        </h1>
+      <nav class="space-x-4 text-sm md:text-base">
+        <a href="gioithieu.html" class="hover:text-yellow-300 transition duration-200">Giới thiệu</a>
+        <a href="sampham.html" class="hover:text-yellow-300 transition duration-200">Sản phẩm</a>
+        <button id="btnLienHe" class="hover:text-yellow-300 transition duration-200 bg-transparent border-none cursor-pointer p-0 font-inherit">
+          Liên hệ
+        </button>
+      </nav>
+    </div>
+  </header>
 
   <!-- Giới thiệu -->
   <section id="gioi-thieu" class="py-12 px-4 text-center bg-white">
     <div class="max-w-2xl mx-auto">
       <h2 class="text-3xl font-semibold mb-4">Thông Tin Về Xưởng May Kiều Vy</h2>
       <p class="text-lg text-gray-700">
-        Chúng tôi là xưởng may uy tín chuyên cung cấp các sản phẩm thời trang chất lượng cao như áo thun, áo sơ mi, đồng phục công ty, thời trang trẻ em... Với nhiều năm kinh nghiệm và đội ngũ thợ lành nghề, chúng tôi cam kết mang đến cho khách hàng những sản phẩm tốt nhất.
+        Chúng tôi là xưởng may uy tín chuyên cung cấp các sản phẩm thời trang chất lượng cao như áo thun, áo sơ mi, đồng phục công ty, thời trang trẻ em...
       </p>
+      <div id="them-noi-dung" class="text-gray-700 mt-4 hidden transition-all duration-300 ease-in-out">
+        <p class="mb-2">
+          Với đội ngũ thợ lành nghề và hệ thống máy móc hiện đại, Xưởng May Kiều Vy luôn đáp ứng các đơn hàng với chất lượng cao và thời gian nhanh chóng.
+        </p>
+        <p class="mb-2">
+          Chúng tôi nhận thiết kế theo yêu cầu, hỗ trợ in/thêu logo, tư vấn kiểu dáng miễn phí và cam kết giao hàng đúng hẹn.
+        </p>
+      </div>
+      <button
+        id="nut-xem-them"
+        class="mt-6 text-blue-600 hover:underline text-base font-medium"
+        onclick="moRongGioiThieu()"
+      >
+        ▶️ Xem thêm
+      </button>
     </div>
   </section>
 
@@ -41,25 +57,22 @@
     <div class="max-w-7xl mx-auto">
       <h2 class="text-3xl font-semibold text-center mb-8">Sản phẩm nổi bật</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Sản phẩm 1 -->
         <div class="bg-white shadow rounded-lg overflow-hidden">
-          <img src="q2.jpg" alt="Quần Short" class="w-full h-60 object-cover">
+          <img src="img/q2.jpg" alt="Quần Short" class="w-full h-60 object-cover" />
           <div class="p-4">
             <h3 class="text-xl font-bold">Quần Short Nam</h3>
             <p class="text-gray-600">Thoáng mát, bền màu, chất liệu bền bỉ.</p>
           </div>
         </div>
-        <!-- Sản phẩm 2 -->
         <div class="bg-white shadow rounded-lg overflow-hidden">
-          <img src="q3.jpg" alt="Đồ bộ " class="w-full h-60 object-cover">
+          <img src="img/q3.jpg" alt="Đồ bộ" class="w-full h-60 object-cover" />
           <div class="p-4">
             <h3 class="text-xl font-bold">Đồ Bộ Nam Nữ</h3>
             <p class="text-gray-600">Chất liệu mát, kiểu dáng hiện đại, nhiều phong cách mới.</p>
           </div>
         </div>
-        <!-- Sản phẩm 3 -->
         <div class="bg-white shadow rounded-lg overflow-hidden">
-          <img src="dongphuc.jpg" alt="Đồng Phục" class="w-full h-60 object-cover">
+          <img src="img/dongphuc.jpg" alt="Đồng Phục" class="w-full h-60 object-cover" />
           <div class="p-4">
             <h3 class="text-xl font-bold">Đồng Phục Công Ty</h3>
             <p class="text-gray-600">Thiết kế theo yêu cầu, hỗ trợ in/thêu logo chuyên nghiệp.</p>
@@ -73,9 +86,17 @@
   <section id="lien-he" class="py-12 px-4 bg-white">
     <div class="max-w-xl mx-auto text-center">
       <h2 class="text-3xl font-semibold mb-4">Liên hệ với chúng tôi</h2>
-      <p class="text-gray-700 mb-4">Địa chỉ: 123 Tân Chánh Hiệp, Quận 12, TP.HCM</p>
+      <p class="text-gray-700 mb-2">Địa chỉ: 123 Tân Chánh Hiệp, Quận 12, TP.HCM</p>
       <p class="text-gray-700 mb-2">Điện thoại: 0123 456 789</p>
-      <p class="text-gray-700 mb-2">Email: lienhe@xuongmaykieuvy.vn</p>
+      <p class="text-gray-700 mb-4">Email: lienhe@xuongmaykieuvy.vn</p>
+      <div class="flex justify-center gap-6 mt-4">
+        <a href="https://www.facebook.com/ten_fanpage_cua_ban" target="_blank">
+          <img src="img/iconfb.png" alt="Facebook" class="w-10 h-10 hover:scale-110 transition" />
+        </a>
+        <a href="https://zalo.me/0123456789" target="_blank">
+          <img src="img/iconzalo.png" alt="Zalo" class="w-10 h-10 hover:scale-110 transition" />
+        </a>
+      </div>
     </div>
   </section>
 
@@ -83,6 +104,70 @@
   <footer class="bg-gray-800 text-white text-center py-6">
     © 2025 Xưởng May Kiều Vy. All rights reserved.
   </footer>
+
+  <!-- Modal Liên hệ -->
+  <div id="modalLienHe" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white rounded-lg max-w-sm w-full p-6 mx-4 relative shadow-lg">
+      <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl font-bold">&times;</button>
+      <h3 class="text-xl font-semibold mb-4 text-center">Chọn phương thức liên hệ</h3>
+      <div class="flex flex-col space-y-4">
+        <a href="mailto:lienhe@xuongmaykieuvy.vn" target="_blank" class="flex items-center justify-center space-x-3 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded py-3 font-medium transition cursor-pointer">
+          <span class="text-2xl">📧</span>
+          <span>Gửi Gmail</span>
+        </a>
+        <a href="https://zalo.me/0123456789" target="_blank" class="flex items-center justify-center space-x-3 border border-green-600 text-green-600 hover:bg-green-600 hover:text-white rounded py-3 font-medium transition cursor-pointer">
+          <span class="text-2xl">💬</span>
+          <span>Nhắn qua Zalo</span>
+        </a>
+        <a href="https://m.me/xuongmaykieuvy" target="_blank" class="flex items-center justify-center space-x-3 border border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white rounded py-3 font-medium transition cursor-pointer">
+          <span class="text-2xl">💬</span>
+          <span>Facebook Messenger</span>
+        </a>
+        <a href="tel:0123456789" class="flex items-center justify-center space-x-3 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white rounded py-3 font-medium transition cursor-pointer">
+          <span class="text-2xl">📞</span>
+          <span>Gọi điện</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    // Mở/đóng modal
+    const btnLienHe = document.getElementById('btnLienHe');
+    const modal = document.getElementById('modalLienHe');
+    const closeModalBtn = document.getElementById('closeModal');
+
+    btnLienHe.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Mở rộng/thu gọn giới thiệu
+    function moRongGioiThieu() {
+      const noiDung = document.getElementById('them-noi-dung');
+      const nut = document.getElementById('nut-xem-them');
+      if (noiDung.classList.contains('hidden')) {
+        noiDung.classList.remove('hidden');
+        nut.textContent = '🔽 Thu gọn';
+      } else {
+        noiDung.classList.add('hidden');
+        nut.textContent = '▶️ Xem thêm';
+      }
+    }
+  </script>
 
 </body>
 </html>

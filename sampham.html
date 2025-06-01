@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sản phẩm - Xưởng May Kiều Vy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-4 px-6 shadow-md flex justify-between items-center">
+    <a href="index.html" class="hover:text-yellow-300">&larr; Trang chủ</a>
+    <h1 class="text-xl font-bold">🧵 Sản Phẩm</h1>
+    <a href="#" id="btnGioHang" class="hover:text-yellow-300 relative">
+      🛒 Giỏ hàng <span id="soLuong" class="bg-yellow-300 text-black text-xs rounded-full px-2 ml-1">0</span>
+    </a>
+  </header>
+
+  <!-- Danh sách sản phẩm -->
+  <main class="max-w-7xl mx-auto py-10 px-4">
+    <h2 class="text-3xl font-semibold text-center mb-8">Danh sách sản phẩm</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Sản phẩm 1 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/q2.jpg" alt="Quần short" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Quần Short Nam</h3>
+          <p class="text-gray-600">Thoáng mát, thời trang, nhiều size.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: 150.000đ</p>
+          <button onclick="themGioHang('Quần Short Nam', 'img/q2.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
+      <!-- Sản phẩm 2 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/q3.jpg" alt="Đồ bộ" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Đồ Bộ Nam Nữ</h3>
+          <p class="text-gray-600">Chất liệu cotton, mặc mát, mẫu mới 2025.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: 200.000đ</p>
+          <button onclick="themGioHang('Đồ Bộ Nam Nữ', 'img/q3.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/q3.jpg" alt="Đồ bộ" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Đồ Bộ Bà Tư</h3>
+          <p class="text-gray-600">Chất liệu cotton, mặc mát, mẫu mới 2025.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: 200.000đ</p>
+          <button onclick="themGioHang('Đồ Bộ Nam Nữ', 'img/q3.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/q3.jpg" alt="Đồ bộ" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Đồ Bộ Đủ Màu</h3>
+          <p class="text-gray-600">Chất liệu cotton, mặc mát, mẫu mới 2025.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: 200.000đ</p>
+          <button onclick="themGioHang('Đồ Bộ Nam Nữ', 'img/q3.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
+      <!-- Sản phẩm 3 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/dongphuc.jpg" alt="Đồng phục công ty" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Đồng Phục Công Ty</h3>
+          <p class="text-gray-600">Thiết kế theo yêu cầu, in/thêu logo.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: Liên hệ</p>
+          <button onclick="themGioHang('Đồng Phục Công Ty', 'img/dongphuc.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Popup giỏ hàng -->
+  <div id="popupGioHang" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
+    <div class="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative">
+      <h3 class="text-xl font-bold mb-4">Giỏ hàng của bạn</h3>
+      <ul id="danhSachGioHang" class="max-h-64 overflow-y-auto divide-y divide-gray-200 mb-4">
+        <!-- Danh sách sản phẩm -->
+      </ul>
+      <div class="flex justify-between mt-4">
+        <button id="btnXoaTatCa" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">🗑️ Xóa tất cả</button>
+        <button id="btnDongPopup" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+    © 2025 Xưởng May Kiều Vy. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function layGioHang() {
+      return JSON.parse(localStorage.getItem('gioHang') || '[]');
+    }
+
+    function luuGioHang(gioHang) {
+      localStorage.setItem('gioHang', JSON.stringify(gioHang));
+    }
+
+    function themGioHang(tenSanPham, anh) {
+      const gioHang = layGioHang();
+      gioHang.push({ ten: tenSanPham, anh });
+      luuGioHang(gioHang);
+      capNhatSoLuong();
+      alert(`Đã thêm "${tenSanPham}" vào giỏ hàng!`);
+    }
+
+    function capNhatSoLuong() {
+      const soLuong = layGioHang().length;
+      document.getElementById('soLuong').innerText = soLuong;
+    }
+
+    function hienThiGioHang() {
+      const gioHang = layGioHang();
+      const ul = document.getElementById('danhSachGioHang');
+      ul.innerHTML = '';
+
+      if (gioHang.length === 0) {
+        ul.innerHTML = '<li class="py-2 text-center text-gray-500">Giỏ hàng trống.</li>';
+      } else {
+        const demSP = {};
+        gioHang.forEach((sp, i) => {
+          if (!demSP[sp.ten]) demSP[sp.ten] = { sl: 0, anh: sp.anh };
+          demSP[sp.ten].sl++;
+        });
+
+        for (const [ten, { sl, anh }] of Object.entries(demSP)) {
+          const li = document.createElement('li');
+          li.className = 'py-2 flex items-center gap-3';
+          li.innerHTML = `
+            <img src="${anh}" alt="${ten}" class="w-12 h-12 object-cover rounded border" />
+            <span class="flex-grow">${ten} <span class="text-sm text-gray-500">(x${sl})</span></span>
+            <button onclick="xoaSanPham('${ten}')" class="text-red-500 hover:text-red-700 text-lg font-bold">❌</button>
+          `;
+          ul.appendChild(li);
+        }
+      }
+
+      document.getElementById('popupGioHang').classList.remove('hidden');
+    }
+
+    function xoaSanPham(tenSanPham) {
+      let gioHang = layGioHang();
+      gioHang = gioHang.filter(sp => sp.ten !== tenSanPham);
+      luuGioHang(gioHang);
+      hienThiGioHang();
+      capNhatSoLuong();
+    }
+
+    function xoaTatCa() {
+      if (confirm("Bạn có chắc chắn muốn xóa tất cả sản phẩm trong giỏ hàng?")) {
+        localStorage.removeItem('gioHang');
+        hienThiGioHang();
+        capNhatSoLuong();
+      }
+    }
+
+    function dongPopup() {
+      document.getElementById('popupGioHang').classList.add('hidden');
+    }
+
+    document.getElementById('btnGioHang').addEventListener('click', function (e) {
+      e.preventDefault();
+      hienThiGioHang();
+    });
+
+    document.getElementById('btnDongPopup').addEventListener('click', dongPopup);
+    document.getElementById('btnXoaTatCa').addEventListener('click', xoaTatCa);
+
+    capNhatSoLuong();
+  </script>
+</body>
+</html>
