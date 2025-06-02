@@ -9,9 +9,9 @@
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Header -->
-  <header class="bg-blue-600 text-white py-4 px-6 shadow-md flex justify-between items-center">
+  <header class="bg-blue-600 text-white py-4 px-6 flex justify-between items-center">
     <a href="index.html" class="hover:text-yellow-300">&larr; Trang chủ</a>
-    <h1 class="text-xl font-bold">🧵 Sản Phẩm</h1>
+    <h1 class="text-xl font-bold">🧵 Sản phẩm</h1>
     <a href="#" id="btnGioHang" class="hover:text-yellow-300 relative">
       🛒 Giỏ hàng <span id="soLuong" class="bg-yellow-300 text-black text-xs rounded-full px-2 ml-1">0</span>
     </a>
@@ -21,70 +21,96 @@
   <main class="max-w-7xl mx-auto py-10 px-4">
     <h2 class="text-3xl font-semibold text-center mb-8">Danh sách sản phẩm</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
-      <!-- Sản phẩm -->
+      <!-- Mẫu sản phẩm -->
       <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <img src="q2.jpg" alt="Quần short" class="w-full h-60 object-cover">
+        <img src="img/q2.jpg" alt="Quần Short Nam" class="w-full h-60 object-cover">
         <div class="p-4">
           <h3 class="text-lg font-bold">Quần Short Nam</h3>
           <p class="text-gray-600">Thoáng mát, thời trang, nhiều size.</p>
-          <p class="text-blue-600 font-semibold my-2">Giá: 150.000đ</p>
-          <button onclick="themGioHang('Quần Short Nam', 'q2.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Thêm vào giỏ hàng</button>
+          <p class="text-blue-600 font-semibold my-2">Giá: <span data-gia="150000">150.000đ</span></p>
+          <input type="number" min="1" value="1" class="w-full border rounded px-2 py-1 mb-2" id="sl-qshort">
+          <button onclick="themGioHang('Quần Short Nam', 'img/q2.jpg', 150000, 'sl-qshort')" class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700">Thêm vào giỏ hàng</button>
         </div>
       </div>
-
       <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <img src="q3.jpg" alt="Đồ Bộ Nam Nữ" class="w-full h-60 object-cover">
+        <img src="img/q2.jpg" alt="Quần Short Nam" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Quần Short Nam</h3>
+          <p class="text-gray-600">Thoáng mát, thời trang, nhiều size.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: <span data-gia="150000">150.000đ</span></p>
+          <input type="number" min="1" value="1" class="w-full border rounded px-2 py-1 mb-2" id="sl-qshort">
+          <button onclick="themGioHang('Quần Short Nam', 'img/q2.jpg', 150000, 'sl-qshort')" class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/q2.jpg" alt="Quần Short Nam" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Quần Short Nam</h3>
+          <p class="text-gray-600">Thoáng mát, thời trang, nhiều size.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: <span data-gia="150000">150.000đ</span></p>
+          <input type="number" min="1" value="1" class="w-full border rounded px-2 py-1 mb-2" id="sl-qshort">
+          <button onclick="themGioHang('Quần Short Nam', 'img/q2.jpg', 150000, 'sl-qshort')" class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/q2.jpg" alt="Quần Short Nam" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Quần Short Nam</h3>
+          <p class="text-gray-600">Thoáng mát, thời trang, nhiều size.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: <span data-gia="150000">150.000đ</span></p>
+          <input type="number" min="1" value="1" class="w-full border rounded px-2 py-1 mb-2" id="sl-qshort">
+          <button onclick="themGioHang('Quần Short Nam', 'img/q2.jpg', 150000, 'sl-qshort')" class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/q2.jpg" alt="Quần Short Nam" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Quần Short Nam</h3>
+          <p class="text-gray-600">Thoáng mát, thời trang, nhiều size.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: <span data-gia="150000">150.000đ</span></p>
+          <input type="number" min="1" value="1" class="w-full border rounded px-2 py-1 mb-2" id="sl-qshort">
+          <button onclick="themGioHang('Quần Short Nam', 'img/q2.jpg', 150000, 'sl-qshort')" class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="img/q3.jpg" alt="Đồ Bộ Nam Nữ" class="w-full h-60 object-cover">
         <div class="p-4">
           <h3 class="text-lg font-bold">Đồ Bộ Nam Nữ</h3>
-          <p class="text-gray-600">Chất liệu cotton, mặc mát, mẫu mới 2025.</p>
-          <p class="text-blue-600 font-semibold my-2">Giá: 200.000đ</p>
-          <button onclick="themGioHang('Đồ Bộ Nam Nữ', 'q3.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Thêm vào giỏ hàng</button>
+          <p class="text-gray-600">Chất liệu cotton, mẫu mới 2025.</p>
+          <p class="text-blue-600 font-semibold my-2">Giá: <span data-gia="200000">200.000đ</span></p>
+          <input type="number" min="1" value="1" class="w-full border rounded px-2 py-1 mb-2" id="sl-dobo">
+          <button onclick="themGioHang('Đồ Bộ Nam Nữ', 'img/q3.jpg', 200000, 'sl-dobo')" class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700">Thêm vào giỏ hàng</button>
         </div>
       </div>
 
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <img src="q3.jpg" alt="Đồ Bộ Bà Tư" class="w-full h-60 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-bold">Đồ Bộ Bà Tư</h3>
-          <p class="text-gray-600">Thiết kế truyền thống, chất liệu vải mát.</p>
-          <p class="text-blue-600 font-semibold my-2">Giá: 180.000đ</p>
-          <button onclick="themGioHang('Đồ Bộ Bà Tư', 'q3.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <img src="q3.jpg" alt="Đồ Bộ Đủ Màu" class="w-full h-60 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-bold">Đồ Bộ Đủ Màu</h3>
-          <p class="text-gray-600">Nhiều màu lựa chọn, size đầy đủ.</p>
-          <p class="text-blue-600 font-semibold my-2">Giá: 200.000đ</p>
-          <button onclick="themGioHang('Đồ Bộ Đủ Màu', 'q3.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <img src="dongphuc.jpg" alt="Đồng phục công ty" class="w-full h-60 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-bold">Đồng Phục Công Ty</h3>
-          <p class="text-gray-600">Thiết kế theo yêu cầu, in/thêu logo.</p>
-          <p class="text-blue-600 font-semibold my-2">Giá: Liên hệ</p>
-          <button onclick="themGioHang('Đồng Phục Công Ty', 'dongphuc.jpg')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
+      <!-- Bạn có thể thêm nhiều sản phẩm khác bằng cách sao chép mẫu trên -->
 
     </div>
   </main>
 
-  <!-- Popup Giỏ hàng -->
+  <!-- Giỏ hàng popup -->
   <div id="popupGioHang" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
-    <div class="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative">
-      <h3 class="text-xl font-bold mb-4">Giỏ hàng của bạn</h3>
-      <ul id="danhSachGioHang" class="max-h-64 overflow-y-auto divide-y divide-gray-200 mb-4"></ul>
-      <div class="flex justify-between mt-4">
-        <button id="btnXoaTatCa" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">🗑️ Xóa tất cả</button>
-        <button id="btnDongPopup" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Đóng</button>
-      </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full relative">
+      <h3 class="text-2xl font-bold mb-4">🛒 Giỏ hàng</h3>
+      <div id="danhSachGioHang" class="mb-4 max-h-80 overflow-y-auto divide-y divide-gray-200"></div>
+      <p class="text-right font-semibold text-lg">Tổng tiền: <span id="tongTien" class="text-blue-600">0đ</span></p>
+      <form action="https://formsubmit.co/thanhphat17106gmail.com" method="POST" id="formDatHang" class="mt-4 space-y-2">
+  <input type="text" name="Họ tên" required placeholder="Họ tên" class="w-full border px-3 py-2 rounded">
+  <input type="tel" name="Số điện thoại" required placeholder="Số điện thoại" class="w-full border px-3 py-2 rounded">
+  <input type="text" name="Địa chỉ" required placeholder="Địa chỉ giao hàng" class="w-full border px-3 py-2 rounded">
+
+  <!-- Trường ẩn chứa đơn hàng -->
+  <input type="hidden" name="Chi tiết đơn hàng" id="donHangChiTiet">
+
+  <!-- Không cần CAPTCHA và redirect sau khi gửi -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://google.com"> <!-- bạn có thể thay bằng link cảm ơn -->
+
+  <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Gửi đơn hàng</button>
+  <button type="button" onclick="xoaTatCa()" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 ml-2">🗑️ Xóa tất cả</button>
+  <button type="button" onclick="dongPopup()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 ml-2">Đóng</button>
+</form>
+
     </div>
   </div>
 
@@ -103,58 +129,65 @@
       localStorage.setItem('gioHang', JSON.stringify(gioHang));
     }
 
-    function themGioHang(tenSanPham, anh) {
+    function themGioHang(ten, anh, gia, idInput) {
+      const sl = parseInt(document.getElementById(idInput).value);
+      if (sl <= 0) return alert("Số lượng phải lớn hơn 0");
       const gioHang = layGioHang();
-      gioHang.push({ ten: tenSanPham, anh });
+      const index = gioHang.findIndex(sp => sp.ten === ten);
+      if (index !== -1) {
+        gioHang[index].soluong += sl;
+      } else {
+        gioHang.push({ ten, anh, gia, soluong: sl });
+      }
       luuGioHang(gioHang);
       capNhatSoLuong();
-      alert(`Đã thêm "${tenSanPham}" vào giỏ hàng!`);
+      alert(`Đã thêm ${sl} "${ten}" vào giỏ hàng!`);
     }
 
     function capNhatSoLuong() {
-      const soLuong = layGioHang().length;
-      document.getElementById('soLuong').innerText = soLuong;
+      const gioHang = layGioHang();
+      const tong = gioHang.reduce((s, sp) => s + sp.soluong, 0);
+      document.getElementById('soLuong').innerText = tong;
     }
 
     function hienThiGioHang() {
       const gioHang = layGioHang();
-      const ul = document.getElementById('danhSachGioHang');
-      ul.innerHTML = '';
+      const danhSach = document.getElementById('danhSachGioHang');
+      danhSach.innerHTML = '';
+      let tong = 0;
 
       if (gioHang.length === 0) {
-        ul.innerHTML = '<li class="py-2 text-center text-gray-500">Giỏ hàng trống.</li>';
+        danhSach.innerHTML = '<p class="text-center text-gray-500">Giỏ hàng trống.</p>';
       } else {
-        const demSP = {};
         gioHang.forEach(sp => {
-          if (!demSP[sp.ten]) demSP[sp.ten] = { sl: 0, anh: sp.anh };
-          demSP[sp.ten].sl++;
-        });
-
-        for (const [ten, { sl, anh }] of Object.entries(demSP)) {
-          const li = document.createElement('li');
-          li.className = 'py-2 flex items-center gap-3';
-          li.innerHTML = `
-            <img src="${anh}" alt="${ten}" class="w-12 h-12 object-cover rounded border" />
-            <span class="flex-grow">${ten} <span class="text-sm text-gray-500">(x${sl})</span></span>
-            <button onclick="xoaSanPham('${ten}')" class="text-red-500 hover:text-red-700 text-lg font-bold">❌</button>
+          const thanhTien = sp.gia * sp.soluong;
+          tong += thanhTien;
+          danhSach.innerHTML += `
+            <div class="flex items-center gap-3 py-2">
+              <img src="${sp.anh}" class="w-16 h-16 object-cover rounded border">
+              <div class="flex-grow">
+                <p class="font-semibold">${sp.ten}</p>
+                <p class="text-sm text-gray-600">Giá: ${sp.gia.toLocaleString()}đ | SL: ${sp.soluong} | Tổng: ${(thanhTien).toLocaleString()}đ</p>
+              </div>
+              <button onclick="xoaSanPham('${sp.ten}')" class="text-red-600 text-xl font-bold hover:text-red-800">❌</button>
+            </div>
           `;
-          ul.appendChild(li);
-        }
+        });
       }
 
+      document.getElementById('tongTien').innerText = tong.toLocaleString() + 'đ';
       document.getElementById('popupGioHang').classList.remove('hidden');
     }
 
-    function xoaSanPham(tenSanPham) {
-      let gioHang = layGioHang();
-      gioHang = gioHang.filter(sp => sp.ten !== tenSanPham);
+    function xoaSanPham(ten) {
+      let gioHang = layGioHang().filter(sp => sp.ten !== ten);
       luuGioHang(gioHang);
       hienThiGioHang();
       capNhatSoLuong();
     }
 
     function xoaTatCa() {
-      if (confirm("Bạn có chắc chắn muốn xóa tất cả sản phẩm trong giỏ hàng?")) {
+      if (confirm("Bạn có chắc chắn muốn xóa tất cả sản phẩm trong giỏ?")) {
         localStorage.removeItem('gioHang');
         hienThiGioHang();
         capNhatSoLuong();
@@ -165,17 +198,27 @@
       document.getElementById('popupGioHang').classList.add('hidden');
     }
 
-    // Gắn sự kiện
-    document.getElementById('btnGioHang').addEventListener('click', function (e) {
+    document.getElementById('btnGioHang').addEventListener('click', e => {
       e.preventDefault();
       hienThiGioHang();
     });
 
-    document.getElementById('btnDongPopup').addEventListener('click', dongPopup);
-    document.getElementById('btnXoaTatCa').addEventListener('click', xoaTatCa);
+    document.getElementById('formDatHang').addEventListener('submit', e => {
+      const gioHang = layGioHang();
+      let chiTiet = "";
+      gioHang.forEach(sp => {
+        const thanhTien = sp.gia * sp.soluong;
+        chiTiet += `- ${sp.ten} | SL: ${sp.soluong} | Giá: ${sp.gia.toLocaleString()}đ | Tổng: ${thanhTien.toLocaleString()}đ\n`;
+      });
 
+      document.getElementById('donHangChiTiet').value = chiTiet;
+
+      // Không chặn mặc định, form sẽ tự gửi
+      localStorage.removeItem('gioHang');
+      capNhatSoLuong();
+      dongPopup();
+    });
     capNhatSoLuong();
   </script>
-
 </body>
 </html>
